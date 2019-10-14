@@ -31,3 +31,7 @@ if(isinstance(myNumber,int)):
     print(myNumber,"est correctement modifié en un nombre entier")
 else:
     print(myNumber,"est toujour une chaine de caracter !")
+#exo6:
+#upper and lower case
+mot = input("entrez un mot ")
+print("Transformation en maj",mot.upper(),",Transformation en min",mot.lower())
