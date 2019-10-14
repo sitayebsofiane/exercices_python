@@ -15,5 +15,11 @@ except ZeroDivisionError:
     print("impossible de deviser par zero")
 #exo3:
 #progrm interacted with user
-nom=input("comminiquer votre nom")
+nom=input("comminiquer votre nom: ")
 print("bienvenue",nom)
+#exo4:
+#display
+name="Gossart"
+surname="Thomas"
+dis=name+"  "+surname
+print(dis)
