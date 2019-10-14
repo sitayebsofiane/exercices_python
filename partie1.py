@@ -1,4 +1,7 @@
 #coding:utf8
 
 #display "hello world" in terminal
-print("Hello wold")
+print("Hello world")
+#display "hello world" in terminal with variable
+bruno="Hello world"
+print(bruno)
