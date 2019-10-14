@@ -15,11 +15,19 @@ except ZeroDivisionError:
     print("impossible de deviser par zero")
 #exo3:
 #progrm interacted with user
-nom=input("comminiquer votre nom: ")
+nom = input("comminiquer votre nom: ")
 print("bienvenue",nom)
 #exo4:
 #display
-name="Gossart"
-surname="Thomas"
+name = "Gossart"
+surname = "Thomas"
 dis=name+"  "+surname
 print(dis)
+#exo5:
+#check type of variable
+myNumber = "123"
+myNumber = int(myNumber)
+if(isinstance(myNumber,int)):
+    print(myNumber,"est correctement modifié en un nombre entier")
+else:
+    print(myNumber,"est toujour une chaine de caracter !")
