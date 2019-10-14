@@ -13,3 +13,7 @@ try:
     print("division:",12/0)
 except ZeroDivisionError:
     print("impossible de deviser par zero")
+#exo3:
+#progrm interacted with user
+nom=input("comminiquer votre nom")
+print("bienvenue",nom)
