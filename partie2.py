@@ -31,3 +31,9 @@ prix2=59
 prix3=20
 total= lambda total:total-total*20/100
 print("total est : ",total(prix1+prix2+prix3))
+
+#exo4
+
+print("resultat",float(input("entrez le premier nombre a aditionner "))
+                +
+float(input("entrez le deuxieme nombre a aditionner ")))
