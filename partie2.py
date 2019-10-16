@@ -22,7 +22,7 @@ try:
     print("votre age est ",age)
     print("le cumul des age: ",age+int(input("age de la personne a coté: ")))
 except ValueError:
-    time.sleep(11)
+    time.sleep(1)
     print("vous avez mal resigner les année")
 #exo3
 
@@ -37,3 +37,15 @@ print("total est : ",total(prix1+prix2+prix3))
 print("resultat",float(input("entrez le premier nombre a aditionner "))
                 +
 float(input("entrez le deuxieme nombre a aditionner ")))
+
+#exo5
+import math
+prenom=input("entrez le prenom ").upper()
+nom=input("entrez le nom ").upper()
+#affiche la premiere et la derniere lettre de son prenom en majuscule
+print(prenom[0],prenom[-1])
+#affiche la premiere et la derniere lettre de son nom en majuscule
+print(nom[0],nom[-1])
+print(prenom[0]+prenom[-1]+nom[0]+nom[-1])
+print("l'age divisé par 33 et arrondi entier sup ",math.ceil(float(input("entrez votre age "))/33))
+
