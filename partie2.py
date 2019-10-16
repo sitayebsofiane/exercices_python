@@ -11,3 +11,18 @@ def verifVar(*var):
     return res==""
 print(verifVar(var1,var2))
 #exo2:
+import time
+try:
+    actuel_year=int(input("entrez l'année actuel: "))
+    if(actuel_year != time.strftime("%Y")):
+        print("l'année actuel est :",time.strftime("%Y"))
+    actuel_year=int(time.strftime("%Y"))
+    death_year=int(input("entrez votre année de naissaice: "))
+    age=actuel_year-death_year
+    print("votre age est ",age)
+    print("le cumul des age: ",age+int(input("age de la personne a coté: ")))
+except ValueError:
+    time.sleep(1)
+    print("vous avez mal resigner les année")
+
+
