@@ -33,9 +33,29 @@ def alter():
                 print("votre age est un nombre carré")
         except ValueError:
             print("taper votre age en chiffre entier positif")
-   
+    def exo3():
+        nombre_caché=random.randint(0,10)
+        nombre_deviné=-1
+        try:
+            while nombre_caché!=nombre_deviné:
+                if 0<=nombre_deviné<nombre_caché:
+                    print("trop petit")
+                    nombre_deviné=int(input("entrez un chiffre a nouveau: "))
+                elif 0<=nombre_caché<nombre_deviné:
+                    print("trop grand")
+                    nombre_deviné=int(input("entrez un chiffre a nouveau: "))
+                else:
+                    nombre_deviné=int(input("entrez un chiffre entre 0 et 10: "))
+            
+            print("gagnez !")
+        except ValueError:
+            print("entrez un nombre entier ")
+                
+
+
+
     try:
-        dico={"1":exo1,"2":exo2}
+        dico={"1":exo1,"2":exo2,"3":exo3}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
