@@ -73,9 +73,17 @@ def alter():
             return math.pi*2*rayon
         r=float(input("entrez le rayon:" ))
         print("la surface",round(aire(r),2),"perimetre",round(peri(r),2))
+    #exo8:
+    def exo8():
+        a=int(input("entrez un nombre la taille de la pyramide"))
+        pyramide="*"
+        for taille in range(1,a):
+            print(pyramide*taille)
+
+
     try:
         dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,
-        "7":exo7}
+        "7":exo7,"8":exo8}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
