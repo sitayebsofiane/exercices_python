@@ -47,13 +47,19 @@ def alter():
             print("gagnez !")
         except ValueError:
             print("entrez un nombre entier ")
+    #exo4:
     def exo4():
        for i in range(1,101):
            print(i)
-    
+    #exo5:      
+    def exo5():
+        for i in range(1,101):
+            if(i%2==0):
+                print(i)
+
 
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
