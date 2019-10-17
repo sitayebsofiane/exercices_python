@@ -14,4 +14,5 @@ for elt in liste:
     if elt>=maxi:
         maxi=elt
 print(maxi,"est le sup de",liste)
+#exo2
 
