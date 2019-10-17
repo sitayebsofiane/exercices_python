@@ -79,11 +79,22 @@ def alter():
         pyramide="*"
         for taille in range(1,a):
             print(pyramide*taille)
+    #exo9:
+    def exo9():
+        for n in range(1,101):
+            if n%3==0 and  n%5 + n%3!=0:
+                print(n,":FIZZ")
+            elif n%5==0 and  n%5 + n%3!=0:
+                print(n,":BUZZ")
+            elif n%5 + n%3==0:
+                print(n,":FIZZBUZZ")
+            else:
+                print(n)
 
 
     try:
         dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,
-        "7":exo7,"8":exo8}
+        "7":exo7,"8":exo8,"9":exo9}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
