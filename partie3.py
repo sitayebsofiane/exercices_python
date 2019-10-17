@@ -56,10 +56,26 @@ def alter():
         for i in range(1,101):
             if(i%2==0):
                 print(i)
-
-
+    #exo6:
+    def exo6():
+        l=float(input("entrez longueur en mettre: "))
+        w=float(input("entrez largeur en mettre: "))
+        d=float(input("entrez longueur en mettre: "))
+        de=float(input("entrez debit: "))
+        def temps_remp(l,w,d,de):
+           return l*w*d/de
+        print("le temps remplissage:",temps_remp(l,w,d,de),"minutes")
+    #exo7:
+    def exo7():
+        def aire(rayon):
+            return math.pi*math.pi*rayon
+        def peri(rayon):
+            return math.pi*2*rayon
+        r=float(input("entrez le rayon:" ))
+        print("la surface",round(aire(r),2),"perimetre",round(peri(r),2))
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,
+        "7":exo7}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
