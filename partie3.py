@@ -7,10 +7,6 @@ def alter():
         var3=random.randint(1,11)
         var4=random.randint(1,11)
         liste=[var1,var2,var3,var4]
-        """
-        liste.sort()
-        print("element plus grand de la liste:\n",liste,"est",liste[-1])
-        """
         maxi=0
         index=0
         for ind,elt in enumerate(liste):
@@ -33,6 +29,7 @@ def alter():
                 print("votre age est un nombre carré")
         except ValueError:
             print("taper votre age en chiffre entier positif")
+    #exo3:
     def exo3():
         nombre_caché=random.randint(0,10)
         nombre_deviné=-1
@@ -50,12 +47,13 @@ def alter():
             print("gagnez !")
         except ValueError:
             print("entrez un nombre entier ")
-                
-
-
+    def exo4():
+       for i in range(1,101):
+           print(i)
+    
 
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
