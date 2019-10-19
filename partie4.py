@@ -97,10 +97,19 @@ def alter():
            
         tab=["1","22","333","4444"]
         print(maxi(tab))
+    #exo9:
+    def exo9():
+        taper=""
+        liste=list()
+        while taper != "fin":
+            liste.append(taper)
+            taper=input("taper fin si vous voulez quiter sino taper une tache ")
+        print(liste)
                
 
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,"7":exo7,"8":exo8}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,
+        "7":exo7,"8":exo8,"9":exo9}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
