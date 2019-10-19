@@ -54,9 +54,15 @@ def alter():
             except ValueError:
               print("message erreur")
         print(rgex(input("tapez votre texte: ")))
-    
+    #exo6:
+    def exo6():
+        liste=["persil","tomate","café","biére","viande"]
+        print(liste)
+        print("element premiere position",liste[0])
+        print("element derniere position",liste[-1])
+        print("element medium position",liste[int((len(liste)-1)/2)])  
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
