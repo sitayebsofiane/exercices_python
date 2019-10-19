@@ -67,12 +67,40 @@ def alter():
         strptime("01/01/1985", "%d/%m/%Y").timetuple())
         liste=["si-tayeb","sofiane",34,time.localtime(timestamp)]
 
-        def tableau(*tab):
+        def tableau(tab):
             for i in tab:
                 print(i) 
         tableau(liste) 
+    #exo8:
+    def exo8():
+        def maxi(tab):
+            
+                if not isinstance(tab,list):
+                    return "entrez un tableau"
+                verif_int=True
+                verif_str=True
+                for i in tab:
+                    if not isinstance(i,int):
+                        verif_int=False
+                    if not isinstance(i,str):
+                        verif_str=False
+                if verif_int:
+                    return max(tab)
+                elif verif_str:
+                    maxi=""
+                    for i in tab:
+                        if len(i)>=len(maxi):
+                            maxi=i
+                    return maxi
+                else:
+                    return verif_str,verif_int
+           
+        tab=["1","22","333","4444"]
+        print(maxi(tab))
+               
+
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,"7":exo7}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5,"6":exo6,"7":exo7,"8":exo8}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
