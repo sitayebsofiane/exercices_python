@@ -1,6 +1,6 @@
 #coding:utf8
 def alter():
-    import math,time
+    import math,time,re
     #exo1:
     def exo1():
         display1="# "
@@ -44,10 +44,19 @@ def alter():
             else:
                 return n*facto(n-1)
         print("factorielle:",facto(int(input("entrez un nombre entier: "))))
-
+    #exo5:
+    def exo5():
+        def rgex(texte):
+            if not isinstance(texte,str):
+                raise ValueError
+            try:
+                return re.sub(r"-",r"_",texte)
+            except ValueError:
+              print("message erreur")
+        print(rgex(input("tapez votre texte: ")))
     
     try:
-        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4}
+        dico={"1":exo1,"2":exo2,"3":exo3,"4":exo4,"5":exo5}
         dico[input("enter le numero de l'exo a exucte ")]()
     except KeyError:
         print("entrez soit 1,2,3....")
